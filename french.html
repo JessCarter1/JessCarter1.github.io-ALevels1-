@@ -1,23 +1,5 @@
 <html>
 <head>
-<script>
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-</script>
-<style>
 <style>
   body{
       background-image:url(http://cdn.wallpapersafari.com/32/50/NGIlEC.jpg)
@@ -36,45 +18,33 @@ function checkTime(i) {
     text-decoration: none;
     font-family:"Arial Black", Gadget, sans-serif;
       }
-      
-  #content{
+   #content{
      padding:40px;
      font-family:"Arial Black", Gadget, sans-serif;
      width:600px;
      length:800px;
      position: realtive;
      bottom: 100px;
+     color:white;
       }
-  #intouchables{
-     position: relative;
-     right:300 px;
-      }
-  #txt{
-    text-align:center;
-    padding:20px;
-    color:white;
-      }
-  </style>
+      
+</style>
 </head>
 <body>
 <div id="subject">
-<h1>FRENCH</h1>
+  <h1>FRENCH</h1>
 </div>
-<body onload="startTime()">
-<div id="txt"></div>
-<div id="links">
+ <div id="links">
   <a href="index.html">Home</a>
   <a href="maths.html">Maths</a>
   <a href="physics.html">Physics</a>
   <a href="computing.html">Computer Science</a>
   <a href="french.html">French</a>
 </div>
-<div id="content" style=color:white; font-family:"Arial Black", Gadget, sans-serif;>
+<div id="content">
   <p>The A Level French course involves studying the grammar and vocabulary used in the language, as well as a film, literature and various topics relating to life in French speaking countries, such as employment, education, customs and traditions. It focuses on developing spontaneous speaking skills, essay writing and translation, in addition to comprehension and conversation.</p>
   <p>The film I am currently studying is called ‘Intouchable’. It is a true story about man called Driss who lives in the impoverished suburbs outside of Paris and has a history of drugs and violence. After spending 6 months in prison, he applies for a job as a carer for an extremely rich quadriplegic, Philippe, if only to get a signature in order to receive his job seeking benefit. However, Philippe sees straight through this and, despising Driss’ attitude, he decides to offer him the job. The film goes on to follow the friendship of the two men as they realise they are more similar than they previously thought, in particular sharing a dark and sarcastic sense of humour, bringing together the two very different worlds of the rich and the poor.</p>
   <p>Studying this film has involved looking at the techniques used by the director in order to tell the story, which has required learning technical vocabulary, as well as describing the events and analysing the developments of the personalities of the main characters.</p>
 </div>
-<img src="http://static.tvgcdn.net/feed/1/925/thumbs/12417925_1300x1733.jpg" height="300" width="200" position:relative;left:300px;>
 </body>
 </html>
-
